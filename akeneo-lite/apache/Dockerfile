@@ -36,10 +36,6 @@ COPY config/cli-php.ini /etc/php5/cli/php.ini
 # Clean
 RUN rm -rf /tmp/* /var/tmp/*
 
-ENV APACHE_RUN_USER www-data
-ENV APACHE_RUN_GROUP www-data
-ENV APACHE_LOG_DIR /var/log/apache2
-
 VOLUME /var/www/html
 EXPOSE 80
 
